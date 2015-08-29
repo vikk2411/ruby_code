@@ -1,16 +1,14 @@
-a=gets.chomp.to_f
-for i in 1..a
-	count=0
-	b=gets.chomp.to_f
-	k=1
-	pow=5**k
-	while pow<b do
-		x=b/pow
-		count+=x
-		k++
-		pow=5**k
-	end
-puts count
+#factorial
+ca=gets.chomp.to_i
+ca.times do |i|
+a=gets.chomp.to_i
+fact=1
+if a==0
+puts fact
 end
-
-
+while a>0 do
+fact*=a
+a-=1
+end
+puts fact
+end
